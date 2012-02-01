@@ -69,6 +69,7 @@ syntax on
 set mouse=a
 set ttymouse=xterm2
 
+colo desert
 "tell the term has 256 colors
 set t_Co=256
 
