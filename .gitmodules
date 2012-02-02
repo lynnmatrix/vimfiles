@@ -82,6 +82,3 @@
 [submodule "bundle/inccomplete"]
 	path = bundle/inccomplete
 	url = https://github.com/vim-scripts/inccomplete.git
-[submodule "plugin/JumpInCode"]
-	path = plugin/JumpInCode
-	url = https://github.com/vim-scripts/JumpInCode.git
