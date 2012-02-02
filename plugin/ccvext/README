@@ -1,0 +1,72 @@
+This is a new version from JumpInCode.vim I don't know why i can't upload a new version to the old JumpInCode page (http://www.vim.org/scripts/script.php?script_id=2770)? So I start this branch 
+
+ctags and cscope plugin for vim, more convenice way to use ctags and cscope in vim. 
+
+Command: 
+\sy Generate tags and cscope database from current directory. 
+\sc Configure window --- Take care of the help information below the window. 
+D:      Remove the project's database. 
+d:      Remove the project from current environment. 
+a(/n): Add the project to current environment. 
+
+       Sample_1: 
+       :e your_source_.h 
+       :cd %:p:h 
+       \sy 
+       <Enter> 
+       :EnQuickSnippet 
+
+       Sample_2: 
+       :cd d:\ 
+       \sc 
+       <Select your database and input enter> 
+       :EnQuickSnippet 
+
+       Suggestion: 
+       1. <Leader>sy is default script command, if it conflict with your other script you can change it at line 753 of script. 
+       2. <Leader>sy is default script command, if it conflict with your other script you can change it at line 754 of script. 
+       3. Command EnQuickSnippet, DiQuickSnippet are not mapped, for convenient way is map it to your own command in your .vimrc or _vimrc file. 
+       4. This script is better work with script: taglist ( http://www.vim.org/scripts/script.php?script_id=273 ) 
+       5. This script is better work with script: MRU  ( http://www.vim.org/scripts/script.php?script_id=273 ) 
+       6. This script is better work with script: Mark  ( http://www.vim.org/scripts/script.php?script_id=1238 ) 
+       7. This script is better work with script: NERDTree ( http://www.vim.org/scripts/script.php?script_id=1658 ) 
+
+Update (4.7.0) 
+    4.7.0 
+    Descript: 
+    - Fix the problem about permission on Unix like system. 
+    4.6.0 
+    Descript: 
+    - Fix the problem the multi cscope connection problem about that connection then 
+    disconnection for few times the connection order will confused. 
+    4.5.0 
+    Descript: 
+    - Fix the problem when ccvext work with script bufexplorer.vim 
+    4.4.0 
+    Descript: 
+- Add C# source code supported. (Recently I am working with it) 
+    - Fix the problem: Sometimes double click the soruce snippet window will cause a dead loop. 
+    TUDO: 
+    - Cscope database list is not work perfect. 
+    4.3.0 
+    Descript: 
+    - When tags file and cscope file not exist, auto remove it from config list. 
+    4.2.0 
+    Descript: 
+    - Don't search from tags when the text's lenght is equal to 1 
+    - Don't search from tags when the text data is c/c++ key word. 
+    BugFix: 
+    - Fix the problem about double click in the main source window. 
+    4.1.0 
+    Descript: 
+    - Modify tip window's info when tags searched not found. 
+    4.0.0 
+    Descript: 
+    - Rename commands name 
+    - Auto update source snippet window 
+
+    Requirement: 
+    ctags and cscope. And windows user can download them from http://code.google.com/p/easy-vim/downloads/list 
+
+    install details
+    copy ccvext.vim to  ~/.vim/plugin/
