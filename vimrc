@@ -329,3 +329,6 @@ autocmd BufReadPost fugitive://*
   \   nnoremap <buffer> .. :edit %:h<CR> |
   \ endif
 
+
+"Notes"
+let g:notes_directory = '~/Documents/Notes'
