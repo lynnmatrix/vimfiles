@@ -91,3 +91,6 @@
 [submodule "bundle/vim-notes"]
 	path = bundle/vim-notes
 	url = https://github.com/xolox/vim-notes.git
+[submodule "bundle/vim-cucumber-runner"]
+	path = bundle/vim-cucumber-runner
+	url = https://github.com/sheldonh/vim-cucumber-runner.git
