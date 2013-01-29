@@ -94,3 +94,9 @@
 [submodule "bundle/vim-cucumber-runner"]
 	path = bundle/vim-cucumber-runner
 	url = https://github.com/sheldonh/vim-cucumber-runner.git
+[submodule "bundle/vim-golang"]
+	path = bundle/vim-golang
+	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "plugin/fencview"]
+	path = plugin/fencview
+	url = https://github.com/mbbill/fencview.git
